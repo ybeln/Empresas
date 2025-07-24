@@ -1,62 +1,40 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fef8f0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  margin: 20px;
   color: #333;
-  padding: 2rem;
 }
 
 h1 {
   text-align: center;
-  color: #cc3366;
-  margin-bottom: 2rem;
+  color: #6a4e2e;
 }
 
-#malla {
+#cursos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 
 .curso {
-  background-color: #ffe6ec;
-  border: 2px solid #f7c4d1;
+  background-color: #fff9e6;
+  border: 2px solid #e0d5b9;
   border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
 .curso:hover {
-  background-color: #ffd6e3;
+  transform: scale(1.02);
 }
 
-.curso.aprobado {
-  background-color: #d4edda;
-  border-color: #a3d9a5;
-  color: #2e7d32;
+.curso input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
 }
 
-.curso.bloqueado {
-  background-color: #f2f2f2;
-  border-color: #ccc;
-  color: #999;
-  cursor: not-allowed;
-}
-
-#contador {
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
-  background-color: #fff0f5;
-  border: 1px solid #f7c4d1;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-}
-
-#contador p {
-  margin: 0.3rem 0;
-  font-weight: 500;
+label {
+  font-size: 16px;
 }
